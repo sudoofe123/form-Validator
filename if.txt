@@ -1,0 +1,33 @@
+ 
+            if (username.value === '') {
+                showError(username, 'Username is required');
+
+            } else {
+                showSuccess(username);
+            }
+
+            if (email.value === '') {
+                showError(email, 'Email is required');
+
+            } else if (!validateEmail(email.value)) {
+                showError(email, 'Email is not Valid')
+            } else {
+                showSuccess(email);
+            }
+
+
+            if (password.value === '') {
+                showError(password, 'Password is required');
+
+            } else {
+                showSuccess(password);
+            }
+
+
+            if (password2.value === '') {
+                showError(, 'Enter your password again');
+
+            } else {
+                showSuccess(password);
+            }
+            
